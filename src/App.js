@@ -3,6 +3,8 @@ import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
 import TeachersPage from "./pages/TeachersPage/TeachersPage";
 import HomePage from "./pages/HomePage/HomePage";
 import Layout from "./components/Layout/Layout";
+import Login from "./pages/Login/Login";
+import Registration from "./pages/Registration/Registration";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="favorites" element={<FavoritesPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
+      <Route path="/login" element={<Login />} />
+      <Route path="/registration" element={<Registration />} />
     </Routes>
   );
 }

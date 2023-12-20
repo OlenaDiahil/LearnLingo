@@ -1,9 +1,9 @@
-import TeachersList from "../../components/TeachersList/TeachersList"
+import Teachers from "../../components/Teachers/Teachers"
 
 const TeachersPage = () => {
   return (
     <>
-        <TeachersList/>  
+        <Teachers/>  
     </>
   )
 }
