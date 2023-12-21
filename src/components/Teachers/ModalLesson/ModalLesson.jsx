@@ -1,9 +1,9 @@
-const ModalLesson = () => {
+const ModalLesson = ({teacherName, teacherAvatar, setShowModal}) => {
   return (
     <div>
         <h2>Book trial lesson</h2>
         <p>Our experienced tutor will assess your current language level, discuss your learning goals, and tailor the lesson to your specific needs.</p> 
-        <div><img src="#" alt="avatar" /> <p>Your teacher</p> <p>teacher name</p></div>
+          <div><img src={teacherAvatar} alt="avatar" /> <p>Your teacher</p> <p>{teacherName}</p></div>
         <form name="form">
             <p>What is your main reason for learning English?</p>
             <label>Career and business
